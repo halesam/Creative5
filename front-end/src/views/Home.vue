@@ -19,7 +19,8 @@
     </div>
     <footer>
       <br>
-      <a href='https://github.com/halesam/Creative4.git'>Git Hub Link</a>
+      <p>Project 3 took 30 hours. Project 4 took 20 hours. Project 5 took 5 hours.</p>
+      <a href='https://github.com/halesam/Creative5.git'>Git Hub Link</a>
 
     </footer>
   </div>
