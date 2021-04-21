@@ -5,7 +5,7 @@
   <!-- if event.user == this.$root.$data.user then my-event, else their-event -->
       <!-- <router-link :class="{'event-link': true, 'my-event': false, 'their-event': true}" :to="'/edit?eventId='+event._id" v-for="event in eventArray" :key="event._id">  -->
       <router-link  :to="'/edit?eventId='+event._id" v-for="event in eventArray" :key="event._id"> 
-        <p v-if="user && event.user" :class="user.username === event.user.username? 'my-event' : 'their-event'">{{event.time}} {{event.user.firstName}} - {{event.name}}</p>
+        <p v-if="user" :class="user.username === event.user.username? 'my-event' : 'their-event'">{{event.time}} {{event.user.firstName}} - {{event.name}}</p>
         <p v-else class="their-event"> {{event.time}} {{event.user.firstName}} - {{event.name}}</p>
       </router-link>
     </div>
